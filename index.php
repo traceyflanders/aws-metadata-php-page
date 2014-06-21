@@ -101,7 +101,7 @@ if (empty($_GET['refresh'])) {
 			    foreach($meta_data as $x=>$x_value) {
 			       echo '<tr>';
 			    	echo '<td><span class="key">'. $x . '</span></td>';
-			            echo '<td><span class="value">ec2-54-187-213-58.us-west-2.compute.amazonaws.com'. //$x_value . '</span></td>';
+			            echo '<td><span class="value">'. $x_value . 'ec2-54-187-213-58.us-west-2.compute.amazonaws.com</span></td>';
 			       echo '</tr>';
 			    }
 			    echo '</table>';
