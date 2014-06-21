@@ -96,7 +96,7 @@ if (empty($_GET['refresh'])) {
 			<h2>EC2 Metadata</h2>
 			  <?php
 			    //metadata table
-			    echo '<table border="1" bgcolor="#ffffff" cellpadding="10" cellspacing="0">';
+			    echo '<table border="1" bgcolor="#ffffff" cellpadding="10" cellspacing="0" width="100%">';
 			    echo '<tr><th bgcolor="#cccccc" align="left">Metadata</th><th bgcolor="#cccccc" align="left">Value</th></tr>';
 			    foreach($meta_data as $x=>$x_value) {
 			       echo '<tr>';
