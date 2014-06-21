@@ -47,7 +47,7 @@ body {
 #main-nav li a:hover {
 	background-position: 0 -50px;
 }
-
+/*
 #main-nav li#about,
 #main-nav li#about a { width: 71px; background-image: url(../images/nav/about.gif); }
 
@@ -59,6 +59,7 @@ body {
 
 #main-nav li#contact,
 #main-nav li#contact a { width: 106px; background-image: url(../images/nav/contact.gif); }
+*/
 
 body.about li#about,
 body.about li#about a,
@@ -77,8 +78,8 @@ body.contact li#contact a:hover {
 
 body.about #header {
 	height: 150px;
-	background: #db6d16
-		    url(../images/logo/about.jpg);
+	background: #db6d16;
+		    /*url(../images/logo/about.jpg);*/
 }
 
 h1 {
@@ -114,7 +115,7 @@ h4 {
 
 #sidebar-a {
 	float: right;
-	width: 280px;
+	width: 1500px;
 }
 
 #sidebar-a .padding {
@@ -122,7 +123,7 @@ h4 {
 }
 
 #content {
-	margin-right: 280px;
+	margin-right: 150px;
 }
 
 #content .padding {
