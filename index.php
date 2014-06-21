@@ -64,11 +64,17 @@ if (empty($_GET['refresh'])) {
 <div id="page-container">
 
 	<div id="main-nav">
+		REFRESH:
 		<ul>
-			<li id="about"><a href="#">About</a></li>
+			<!--  <li id="about"><a href="#">About</a></li>
 			<li id="services"><a href="#">Services</a></li>
 			<li id="portfolio"><a href="#">Portfolio</a></li>
-			<li id="contact"><a href="#">Contact Us</a></li>
+			<li id="contact"><a href="#">Contact Us</a></li> -->
+			<li>2s</li>
+			<li>5s</li>
+			<li>1m</li>
+			<li>2m</li>
+			<li>5m</li>
 		</ul>
 	</div>
 	
