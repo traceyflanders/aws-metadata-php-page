@@ -70,11 +70,11 @@ if (empty($_GET['refresh'])) {
 			<li id="services"><a href="#">Services</a></li>
 			<li id="portfolio"><a href="#">Portfolio</a></li>
 			<li id="contact"><a href="#">Contact Us</a></li> -->
-			<li>2s</li>
-			<li>5s</li>
-			<li>1m</li>
-			<li>2m</li>
-			<li>5m</li>
+			<li><a href="<?php echo $php_self.'?refresh=2'; ?>">2s</a></li>&nbsp|&nbsp
+			<li><a href="<?php echo $php_self.'?refresh=5'; ?>">5s</a></li>&nbsp|&nbsp
+			<li><a href="<?php echo $php_self.'?refresh=30'; ?>">30s</a></li>&nbsp|&nbsp
+			<li><a href="<?php echo $php_self.'?refresh=60'; ?>">602s</a></li>&nbsp|&nbsp
+			<li><a href="<?php echo $php_self.'?refresh=120'; ?>">120s</a></li>
 		</ul>
 	</div>
 	
@@ -83,15 +83,17 @@ if (empty($_GET['refresh'])) {
 	</div>
 	
 	<div id="sidebar-a">
-		<h2>Region</h2>
-			<p>US-x-x</p>
-		<h3>Availability Zone</h3>
-			<p>us-xxx-x-abc
+		<div class="padding">
+			<h2>Region</h2>
+				<p>US-x-x</p>
+			<h3>Availability Zone</h3>
+				<p>us-xxx-x-abc</p>
+		</div>
 	</div> <!-- End sidebar-a -->
 	
 	<div id="content">
 		<div class="padding">
-			<h2>About</h2>
+			<h2>EC2 Metadata</h2>
 			  <?php
 			    //metadata table
 			    echo '<table border="1" bgcolor="#ffffff" cellpadding="10" cellspacing="0">';
