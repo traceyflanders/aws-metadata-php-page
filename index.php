@@ -99,9 +99,9 @@ if (empty($_GET['refresh'])) {
 			    echo '<table border="1" bgcolor="#ffffff" cellpadding="10" cellspacing="0" width="100%">';
 			    echo '<tr><th bgcolor="#cccccc" align="left">Metadata</th><th bgcolor="#cccccc" align="left">Value</th></tr>';
 			    foreach($meta_data as $x=>$x_value) {
-			       echo '<tr nowrap>';
-			    	echo '<td><span class="key">'. $x . '</span></td>';
-			            echo '<td><span class="value">'. $x_value . 'ec2-54-187-213-58.us-west-2.compute.amazonaws.com</span></td>';
+			       echo '<tr>';
+			    	echo '<td nowrap><span class="key">'. $x . '</span></td>';
+			            echo '<td no wrap><span class="value">'. $x_value . 'ec2-54-187-213-58.us-west-2.compute.amazonaws.com</span></td>';
 			       echo '</tr>';
 			    }
 			    echo '</table>';
