@@ -110,7 +110,7 @@ if (empty($_GET['refresh'])) {
 			<a href="#">Contact Us</a> | 
 			<a href="#">Terms of Trade</a>
 		</div>
-		<div id="copyleft">Copyright &copy; <?php echo $author_project.' '.$author_version;?><br />
+		<div id="copyleft">Copyleft &copy; <?php echo $author_project.' '.$author_version;?><br />
 		Powered by <a href="http://www.php.net/">PHP5</a> and <a href="<?php echo $author_email; ?>"><?php echo $author_name.' Development'; ?></a>
 		</div>
 	</div> <!-- End Footer -->
