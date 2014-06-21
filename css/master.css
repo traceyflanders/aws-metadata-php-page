@@ -20,6 +20,7 @@ body {
 	width: 760px;
 	margin: auto;
 	text-align: left;
+	border: dotted;
 }
 
 /* Main Navigation */
@@ -79,7 +80,7 @@ body.contact li#contact a:hover {
 body.about #header {
 	height: 150px;
 	background: #db6d16;
-		    /*url(../images/logo/about.jpg);
+		    /*url(../images/logo/about.jpg);*/
 }
 
 h1 {
