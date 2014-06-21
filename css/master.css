@@ -117,6 +117,7 @@ h4 {
 #sidebar-a {
 	float: right;
 	width: 280px;
+	background-color: red;
 }
 
 #sidebar-a .padding {
@@ -125,6 +126,7 @@ h4 {
 
 #content {
 	margin-right: 280px;
+	background-color: green;
 }
 
 #content .padding {
@@ -152,6 +154,7 @@ h4 {
 	border-top: 1px solid #efefef;
 	padding: 13px 25px;
 	line-height: 18px;
+	background-color: purple;
 }
 
 #footer #altnav {
