@@ -49,7 +49,7 @@ body {
 	color: #666666;
 	/*background-position: 0 -50px;*/
 }
-
+/*
 #main-nav li#about,
 #main-nav li#about a { width: 71px; background-image: url(../images/nav/about.gif); }
 
@@ -118,8 +118,8 @@ h4 {
 #sidebar-a {
 	float: right;
 	width: 200px;
-	background-color: red;
-	height: 500px;
+	background-color: #c0c0c0;
+	height: 450px;
 }
 
 #sidebar-a .padding {
