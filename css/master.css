@@ -30,12 +30,7 @@ body {
 
 #main-nav { height: 33px; 	background-color: #000000;}
 
-#main-nav ul { margin: 400px; padding: 0px;} 
-
-/*
-
-#main-nav { padding-left: 11px; overflow: hidden; } 
-*/
+#main-nav ul { margin: 0px; padding: 0px;} 
 
 #main-nav li { float: left; list-style-type: none;}
 
