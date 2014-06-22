@@ -95,7 +95,7 @@ if (empty($_GET['refresh'])) {
 			<h2>AWS Region</h2>
 				<p>US-x-x</p>
 			<h3>Availability Zone</h3>
-				<p><?php findaz($meta_data['availability-zone']);?></p>
+				<p><?php echo findaz($meta_data['availability-zone']);?></p>
 			<br>
 			<h3>Information</h3>
 			<p>Server: <?php echo $server_software.'<br>IP: ';?><a href="http://<?php echo $server_ip; ?>"><?php echo $server_ip; ?></a></p>
