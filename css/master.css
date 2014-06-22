@@ -120,6 +120,14 @@ h4 {
 	border-left: 1px solid #666666;
 }
 
+#sidebar-a a {
+	color: #666666;
+}
+
+#sidebar-a a {
+	color: #ff6600;
+}
+
 #sidebar-a .padding {
 	padding: 25px;
 }
