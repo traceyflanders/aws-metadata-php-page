@@ -45,8 +45,8 @@ body {
 #main-nav #links {
 	width: 350px;
 	float: right;
-	text-align: right;
-	padding-top: 13px;
+	text-align: center;
+	padding: 0px;
 }
 
 #main-nav li a {
