@@ -17,7 +17,8 @@ $curl_cmd = 'curl --connect-timeout 1';
 $meta_host = '169.254.169.254';
 $meta_data['ami-id'] = $ami_id = exec($curl_cmd." http://".$meta_host."/latest/meta-data/ami-id/");
 $meta_data['instance-id'] = $instance_id = exec($curl_cmd." http://".$meta_host."/latest/meta-data/instance-id/");
-$meta_data['availability-zone'] = $reg_az = exec($curl_cmd." http://".$meta_host."/latest/meta-data/placement/availability-zone/");
+//$meta_data['availability-zone'] = $reg_az = exec($curl_cmd." http://".$meta_host."/latest/meta-data/placement/availability-zone/");
+$meta_data['availability-zone'] = 'us-west-2a';
 $meta_data['public-hostname'] = $public_hostname = exec($curl_cmd." http://".$meta_host."/latest/meta-data/public-hostname/");
 $meta_data['public-ipv4'] = $public_ipv4 = exec($curl_cmd." http://".$meta_host."/latest/meta-data/public-ipv4/");
 $meta_data['local-hostname'] = $local_hostname = exec($curl_cmd." http://".$meta_host."/latest/meta-data/local-hostname/");
@@ -44,7 +45,7 @@ if (empty($_GET['refresh'])) {
  function findAZ ($az) {
  	// check if the value is null/empty
  	if (empty($az) || null($az) || !isset($az)) {
- 		return 'unknown az';
+ 		return 'Error: unknown az';
  	}
  	return $az;
  }
@@ -53,9 +54,13 @@ if (empty($_GET['refresh'])) {
  function findRegion ($region) {
  	// check if the value is null/empty
  	if (empty($$region) || null($region) || !isset($region)) {
- 		return 'unknown region';
+ 		return 'Error: unknown region';
  	}
- 	return $region;
+ 	
+ 	$region = strpos("$az", 'us-west');
+ 	if ($az != false) {
+ 		return $region;
+ 	}
  }
 
 ?>
