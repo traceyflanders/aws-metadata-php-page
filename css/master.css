@@ -92,6 +92,8 @@ body.contact li#contact a:hover {
 body.about #header {
 	height: 60px;
 	background: #ff6600;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
 		    /*url(../images/logo/about.jpg);*/
 }
 
