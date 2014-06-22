@@ -35,16 +35,15 @@ body {
 /* End Hack */
 
 #main-nav li { float: left; }
-
+/*
 #main-nav li a {
 	display: block;
 	height: 0px !important;
-	height /**/:50px; /* IE 5/Win hack */ 
 	padding: 50px 0 0 0;
 	overflow: hidden;
 	background-repeat: no-repeat;
 }
-
+*/
 #main-nav li a:hover {
 	background-position: 0 -50px;
 }
