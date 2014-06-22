@@ -132,13 +132,13 @@ h4 {
 	padding: 25px;
 }
 
-#sidebar .east {
+#sidebar-a .east {
 	color: #0099ff;
 	font-weight: bold;
 	font-size: 14px;
 }
 
-#sidebar .west {
+#sidebar-a .west {
 	color: #cc0000;
 	font-weight: bold;
 	font-size: 14px;

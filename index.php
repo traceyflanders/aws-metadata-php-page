@@ -140,9 +140,9 @@ if (empty($_GET['refresh'])) {
 	<div id="sidebar-a">
 		<div class="padding">
 		<h2>AWS Region</h2>
-				<p><?php echo findRegion($myregion); ?></p><br>
+				<?php echo findRegion($myregion); ?><br>
 			<h3>Availability Zone</h3>
-				<p><?php echo findAZ($myregion); ?></p><br>
+				<?php echo findAZ($myregion); ?><br>
 			<h3>Information</h3>
 			<p>Server: <?php echo $server_software.'<br>IP: ';?><a href="http://<?php echo $server_ip; ?>"><?php echo $server_ip; ?></a></p>
 			<p>Client: <?php echo $client_agent.'<br>IP: '.$client_ip; ?></p>
