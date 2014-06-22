@@ -26,8 +26,8 @@ body {
 
 /* Main Navigation */
 
-#main-nav { height: 50px; 	background-color: #666666; }
-#main-nav ul { margin: 0; padding: 5px; } 
+#main-nav { height: 30px; 	background-color: #666666; }
+#main-nav ul { margin: 0; padding: 15px; } 
 
 /* IE5 Mac Hack \*/ 
 #main-nav { padding-left: 11px; } 
