@@ -57,7 +57,7 @@ if (empty($_GET['refresh'])) {
  	
  	if (preg_match('#^us-west#i', $region) === 1) {
  		// Starts with http:// or https:// (case insensitive).
- 		$region = substr($region, 0,7);
+ 		$region = substr($region, 0,8);
  		$region = strtoupper($region);
  		return $region;
  	}
