@@ -40,13 +40,13 @@ body {
 #main-nav li a {
 	color: #f1f1f1;
 	display: block;
-	padding: 0px;
+	padding: 10px;
 }
 
 #main-nav li a:hover {
 	color: #f1f1f1;
 	display: block;
-	padding: 0px;
+	padding: 10px;
 	background-color: #ff6600;
 	text-decoration: none;
 }
