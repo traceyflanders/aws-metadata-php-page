@@ -144,6 +144,14 @@ h4 {
 	padding-bottom: 15px;
 }
 
+#content key {
+	color: red;
+}
+
+#content value {
+	color: blue;
+}
+
 #footer {
 	clear: both;
 	height: 40px;
