@@ -65,8 +65,9 @@ if (empty($_GET['refresh'])) {
 <div id="page-container">
 
 	<div id="main-nav">
+		<h2>Page Refesh</h2>
 		<ul>
-			<li>Page Refesh</li>
+
 			<li><a href="<?php echo $php_self.'?refresh=2'; ?>">2s</a></li>
 			<li><a href="<?php echo $php_self.'?refresh=5'; ?>">5s</a></li>
 			<li><a href="<?php echo $php_self.'?refresh=30'; ?>">30s</a></li>
