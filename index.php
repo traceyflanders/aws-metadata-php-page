@@ -49,13 +49,15 @@ if (empty($_GET['refresh'])) {
  	 	}
 	// find out if its west	
  		if (preg_match('#us-west-#i', $az) === 1) {
- 			// Starts with us-west (case insensitive).
+ 			// Starts with us-west (case insensitive)
+ 			$az = strtolower($az);
  			$az = '<font color="blue">'.$az.'</font>';
  			return $az;
  		} 		
  	// find out if its east
  		if (preg_match('#us-east-#i', $az) === 1) {
- 			// Starts with us-west (case insensitive).
+ 			// Starts with us-west (case insensitive)
+ 			$az = strtolower($az);
  			$az = '<font color="red">'.$az.'</font>';
  			return $az;
  		}
@@ -71,7 +73,7 @@ if (empty($_GET['refresh'])) {
  	 	}
 	// find out if its west	
  		if (preg_match('#us-west-#i', $region) === 1) {
- 			// Starts with us-west (case insensitive).
+ 			// Starts with us-west (case insensitive)
  			$region = substr($region, 0,9);
  			$region = strtoupper($region);
  			$region = '<font color="blue">'.$region.'</font>';
@@ -79,7 +81,7 @@ if (empty($_GET['refresh'])) {
  		} 		
  	// find out if its east
  		if (preg_match('#us-east-#i', $region) === 1) {
- 			// Starts with us-west (case insensitive).
+ 			// Starts with us-west (case insensitive)
  			$region = substr($region, 0,9);
  			$region = strtoupper($region);
  			$region = '<font color="red">'.$region.'</font>';
