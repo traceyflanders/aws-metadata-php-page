@@ -53,15 +53,17 @@ if (empty($_GET['refresh'])) {
  /** find the region **/
  function findRegion ($region) {
  	// check if the value is null/empty
- 	if (empty($$region) || null($region) || !isset($region)) {
+ 	 	if (empty($$region) || null($region) || !isset($region)) {
  		return 'Error: unknown region';
- 	}
  	
-	// match first x letters and convert to uppercase 	
- 	if (preg_match('#^us-west#i', $region) === 1) {
- 		// Starts with http:// or https:// (case insensitive).
  		$region = substr($region, 0,9);
  		$region = strtoupper($region);
+//  		if (preg_match('#us-west-#i', $region) === 1) {
+//  			// Starts with us-west (case insensitive).
+ 			
+ 			
+//  		}
+ 
  		return $region;
  	}
  	
@@ -112,12 +114,10 @@ if (empty($_GET['refresh'])) {
 	<div id="header">
 		<div id="logo">
 			<h1>Amazon Web Services</h1>
-		</div>
-	</div>
+	$meta_data['availability-zone']</div>
 	
 	<div id="sidebar-a">
-		<div class="padding">
-			<h2>AWS Region</h2>
+		<div class="padding"			<h2>AWS R$meta_data['availability-zone']>
 				<p><?php echo findRegion($myregion); ?></p>
 			<h3>Availability Zone</h3>
 				<p><?php //echo findAZ($myregion); ?></p>
