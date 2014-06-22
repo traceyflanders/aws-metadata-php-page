@@ -111,11 +111,11 @@ if (empty($_GET['refresh'])) {
 		<div id="altnav">
 			<a href="<?php echo $git_url; ?>/blob/master/README.md">Readme</a> | 
 			<a href="<?php echo $git_url; ?>">Source</a> | 
-			<a href="mailto:<?php echo $author_email; ?>?subject:<?php echo $author_project;?>">Contact</a> | 
+			<a href="mailto:<?php echo $author_email; ?>?subject=<?php echo $author_project;?>">Contact</a> | 
 			<a href="<?php echo $git_url; ?>/blob/master/LICENSE">License</a>
 		</div>
 		<div id="copyleft">Copyleft &copy; <a href="<?php echo $git_url; ?>"><?php echo $author_project.' '.$author_version;?></a><br />
-		Powered by <a href="http://www.php.net/">PHP5</a> and <a href="mailto:?subject:<?php echo $author_project;?>"><?php echo $author_name.' Development'; ?></a>
+		Powered by <a href="http://www.php.net/">PHP5</a> and <a href="mailto:<?php echo $author_email;?>?subject=<?php echo $author_project;?>"><?php echo $author_name.' Development'; ?></a>
 		</div>
 	</div> <!-- End Footer -->
 
