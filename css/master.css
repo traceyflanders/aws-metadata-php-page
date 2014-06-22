@@ -28,7 +28,7 @@ body {
 
 /* Main Navigation */
 
-#main-nav { height: 35px; 	background-color: #000000; margin-left: 300px;}
+#main-nav { height: 33px; 	background-color: #000000; padding-left: 300px;}
 
 #main-nav ul { margin: 0px; padding: 0px; } 
 
