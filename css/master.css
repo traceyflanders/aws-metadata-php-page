@@ -45,11 +45,27 @@ body {
 }
 
 #main-nav li a {
+	color: #f1f1f1;
+	display: block;
+	padding: 10px;
 	text-decoration: none;
+	margin: 0px;
 }
 
 #main-nav li a:hover {
-	background-color: purple;
+	color: #f1f1f1;
+	display: block;
+	padding: 10px;
+	background-color: #ff6600;
+	text-decoration: none;
+	margin: 0px;
+}
+
+#main-nav li a:visted {
+	color: #f1f1f1;
+	display: block;
+	padding: 10px;
+	background-color: #ff6600;
 	text-decoration: none;
 	margin: 0px;
 }
