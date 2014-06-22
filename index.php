@@ -179,6 +179,6 @@ if (empty($_GET['refresh'])) {
 	</div> <!-- End Footer -->
 
 </div> <!-- End Page Container -->
-
+</div>
 </body>
 </html>
