@@ -124,7 +124,7 @@ h4 {
 	color: #666666;
 }
 
-#sidebar-a a {
+#sidebar-a a:hover {
 	color: #ff6600;
 }
 
