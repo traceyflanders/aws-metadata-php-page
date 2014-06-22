@@ -39,6 +39,12 @@ if (empty($_GET['refresh'])) {
 	} else {
 	 $page_refresh = $_GET['refresh'];
 }
+
+
+ function findAZ ($az) {
+ 	if (!empty($az)) 
+ 		return 'unknown az';
+ }
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -89,7 +95,7 @@ if (empty($_GET['refresh'])) {
 			<h2>AWS Region</h2>
 				<p>US-x-x</p>
 			<h3>Availability Zone</h3>
-				<p>us-xxx-x-abc</p>
+				<p><?php findaz($meta_data['availability-zone']);?></p>
 			<br>
 			<h3>Information</h3>
 			<p>Server: <?php echo $server_software.'<br>IP: ';?><a href="http://<?php echo $server_ip; ?>"><?php echo $server_ip; ?></a></p>
