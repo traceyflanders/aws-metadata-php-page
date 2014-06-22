@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 
 // Credit
 $author_name = 'AlphaMusk';
-$author_version = 'v1.2';
+$author_version = 'v1.3';
 $author_email = 'alphamusk@networkpulse.com';
 $author_project = 'AWS Metadata PHP Page';
 
