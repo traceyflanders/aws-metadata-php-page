@@ -54,7 +54,7 @@ if (empty($_GET['refresh'])) {
  function findRegion ($region) {
  	// check if the value is null/empty
  	echo 'before:'.$region.'<br>';
- 	$region = substr($region, 0, 6) === 'us-west';
+ 	$region = substr($region, 0, 2) === 'us-';
  	echo 'region='.$region;
 //  	if (empty($$region) || null($region) || !isset($region)) {
 //  		return 'Error: unknown region';
