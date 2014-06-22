@@ -30,7 +30,7 @@ body {
 
 #main-nav { height: 35px; 	background-color: #000000; }
 
-#main-nav ul { margin: 0px; padding: 0px; margin-left: 100px; } 
+#main-nav ul { margin: 0px; padding: 0px; margin-left: 300px; } 
 
 /*
 
@@ -52,6 +52,7 @@ body {
 	padding: 10px;
 	text-decoration: none;
 	margin: 0px;
+	border: 0px
 }
 
 #main-nav li a:hover {
@@ -61,6 +62,7 @@ body {
 	background-color: #ff6600;
 	text-decoration: none;
 	margin: 0px;
+	border: 0px;
 }
 
 
