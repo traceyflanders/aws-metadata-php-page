@@ -110,6 +110,7 @@ body #header {
 	margin-top: 0px;
 	padding-left: 115px;
 	color: #f1f1f1;
+	dsiplay: block;
 }
 
 h1 {
