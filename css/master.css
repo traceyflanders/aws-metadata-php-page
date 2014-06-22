@@ -172,7 +172,7 @@ h4 {
 	font-size: 11px;
 	color: #f1f1f1;
 	border-top: 1px solid #efefef;
-	padding: 10px 10px;
+	padding: 13px 15px;
 	line-height: 18px;
 	background-color: #666666;
 	border-top: 1px solid #666666;
@@ -184,10 +184,12 @@ h4 {
 	float: right;
 	text-align: right;
 	padding-top: 13px;
+	border: 1px solid red;
 }
 
 #footer #copyleft {
-	padding-top: 10px;
+	padding-top: 13px;
+	border: 1px solid red;z
 }
 
 #footer a {
