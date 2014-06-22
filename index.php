@@ -56,7 +56,7 @@ if (empty($_GET['refresh'])) {
  	echo 'before:'.$region.'<br>';
  	$region = substr($region, 0, 2) === 'us-';
  	
- 	if (preg_match('#^us-west#i', $url) === 1) {
+ 	if (preg_match('#^us-west#i', $region) === 1) {
  		// Starts with http:// or https:// (case insensitive).
  		echo 'region=US-West';
  	}
