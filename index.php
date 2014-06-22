@@ -52,10 +52,9 @@ if (empty($_GET['refresh'])) {
  
  /** find the region **/
  function findRegion ($region) {
- 	
  	echo 'before='.$region.'<br>';
  	// check if the value is null/empty
- 	 	if (empty($region) || null($region) || !isset($region)) {
+ 	 	if (empty($region) || !isset($region)) {
  		return 'Error: unknown region';
  	 	}
 		// find out if its East or west 		
