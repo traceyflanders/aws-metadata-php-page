@@ -53,8 +53,11 @@ if (empty($_GET['refresh'])) {
  /** find the region **/
  function findRegion ($region) {
  	// check if the value is null/empty
- 	echo 'before:'.$region.'<br>';
+ 	if (empty($$region) || null($region) || !isset($region)) {
+ 		return 'Error: unknown region';
+ 	}
  	
+	// match first x letters and convert to uppercase 	
  	if (preg_match('#^us-west#i', $region) === 1) {
  		// Starts with http:// or https:// (case insensitive).
  		$region = substr($region, 0,8);
@@ -62,15 +65,10 @@ if (empty($_GET['refresh'])) {
  		return $region;
  	}
  	
-//  	if (empty($$region) || null($region) || !isset($region)) {
-//  		return 'Error: unknown region';
- 	}
+
  	
 
-//  	if ($region !== false) {
-//  		return $region;
-//  	}
-//  }
+ }
 
 ?>
 
