@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 
 // Credit
 $author_name = 'AlphaMusk';
-$author_version = 'v1.4';
+$author_version = 'v1.1';
 $author_email = 'alphamusk@networkpulse.com';
 $author_project = 'AWS Metadata PHP Page';
 
@@ -158,7 +158,7 @@ if (empty($_GET['refresh'])) {
 			    foreach($meta_data as $x=>$x_value) {
 			       echo '<tr>';
 			    	echo '<td nowrap><span class="key">'. $x . '</span></td>';
-			            echo '<td no wrap><span class="value">'. $x_value . 'ec2-54-187-213-58.us-west-2.compute.amazonaws.com</span></td>';
+			            echo '<td no wrap><span class="value">'. $x_value . '</span></td>';
 			       echo '</tr>';
 			    }
 			    echo '</table>';
