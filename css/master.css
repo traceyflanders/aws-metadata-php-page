@@ -30,14 +30,14 @@ body {
 
 #main-nav { height: 35px; 	background-color: #000000; }
 
-#main-nav ul { margin: 0px; padding: 0px; } 
+#main-nav ul { margin: 0px; padding: 0px; margin-left: 100px; } 
 
 /*
 
 #main-nav { padding-left: 11px; overflow: hidden; } 
 */
 
-#main-nav li { float: left; list-style-type: none; margin-left: 100px;}
+#main-nav li { float: left; list-style-type: none;}
 
 #main-nav li p {
 	color: #f1f1f1;
