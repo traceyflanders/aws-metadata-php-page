@@ -90,6 +90,8 @@ if (empty($_GET['refresh'])) {
 				<p>US-x-x</p>
 			<h3>Availability Zone</h3>
 				<p>us-xxx-x-abc</p>
+			<h3>Server: <?php echo $server_software; ?></h3>	
+			<h3>Client: <?php echo $client_agent; ?></h3>
 		</div>
 	</div> <!-- End sidebar-a -->
 	
