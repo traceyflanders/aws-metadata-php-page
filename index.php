@@ -46,6 +46,16 @@ if (empty($_GET['refresh'])) {
  	if (empty($az) || null($az) || !isset($az)) {
  		return 'unknown az';
  	}
+ 	return $az;
+ }
+ 
+ 
+ function findRegion ($region) {
+ 	// check if the value is null/empty
+ 	if (empty($$region) || null($region) || !isset($region)) {
+ 		return 'unknown region';
+ 	}
+ 	return $region;
  }
 
 ?>
@@ -96,7 +106,7 @@ if (empty($_GET['refresh'])) {
 	<div id="sidebar-a">
 		<div class="padding">
 			<h2>AWS Region</h2>
-				<p>US-x-x</p>
+				<p>U<?php echo findAZ($meta_data['availability-zone']); ?></p>
 			<h3>Availability Zone</h3>
 				<p><?php echo findAZ($meta_data['availability-zone']); ?></p>
 			<br>
