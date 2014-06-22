@@ -55,6 +55,7 @@ body {
 	margin: 0px;
 	width: 25px;
 	text-align: center;
+	border-bottom: 1px solid #ff6600;
 }
 
 #main-nav li a:hover {
