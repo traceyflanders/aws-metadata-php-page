@@ -37,11 +37,10 @@ body {
 #main-nav { padding-left: 11px; overflow: hidden; } 
 */
 
-#main-nav li { float: left; list-style-type: none; width: 55px; text-align: center;'}
+#main-nav li { float: left; list-style-type: none; width: 40px; text-align: center;'}
 
 #main-nav p {
 	color: #f1f1f1;
-	margin: 0px;
 }
 
 #main-nav li a {
