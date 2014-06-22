@@ -52,19 +52,27 @@ if (empty($_GET['refresh'])) {
  
  /** find the region **/
  function findRegion ($region) {
- 	echo 'before='.$region.'<br>';
  	// check if the value is null/empty
  	 	if (empty($region) || !isset($region)) {
  		return 'Error: unknown region';
  	 	}
-		// find out if its East or west 		
+	// find out if its west	
  		if (preg_match('#us-west-#i', $region) === 1) {
  			// Starts with us-west (case insensitive).
  			$region = substr($region, 0,9);
  			$region = strtoupper($region);
  			$region = '<font color="blue">'.$region.'</font>';
+ 			return $region;
  		} 		
- 		return $region;
+ 	// find out if its east
+ 		if (preg_match('#us-east-#i', $region) === 1) {
+ 			// Starts with us-west (case insensitive).
+ 			$region = substr($region, 0,9);
+ 			$region = strtoupper($region);
+ 			$region = '<font color="red">'.$region.'</font>';
+ 			return $region;
+ 		}
+ 		
  		
  	} //end function
  	
