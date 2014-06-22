@@ -17,8 +17,8 @@ $curl_cmd = 'curl --connect-timeout 1';
 $meta_host = '169.254.169.254';
 $meta_data['ami-id'] = $ami_id = exec($curl_cmd." http://".$meta_host."/latest/meta-data/ami-id/");
 $meta_data['instance-id'] = $instance_id = exec($curl_cmd." http://".$meta_host."/latest/meta-data/instance-id/");
-//$meta_data['availability-zone'] = $reg_az = exec($curl_cmd." http://".$meta_host."/latest/meta-data/placement/availability-zone/");
-$myregion = 'us-east-2C';
+// $meta_data['availability-zone'] = $reg_az = exec($curl_cmd." http://".$meta_host."/latest/meta-data/placement/availability-zone/");
+$meta_data['availability-zone']  = 'us-east-2C';
 $meta_data['public-hostname'] = $public_hostname = exec($curl_cmd." http://".$meta_host."/latest/meta-data/public-hostname/");
 $meta_data['public-ipv4'] = $public_ipv4 = exec($curl_cmd." http://".$meta_host."/latest/meta-data/public-ipv4/");
 $meta_data['local-hostname'] = $local_hostname = exec($curl_cmd." http://".$meta_host."/latest/meta-data/local-hostname/");
@@ -140,9 +140,9 @@ if (empty($_GET['refresh'])) {
 	<div id="sidebar-a">
 		<div class="padding">
 		<h2>AWS Region</h2>
-				<p><?php echo findRegion($myregion); ?></p><br>
+				<p><?php echo findRegion($meta_data['availability-zone']); ?></p><br>
 			<h3>Availability Zone</h3>
-				<p><?php echo findAZ($myregion); ?></p><br>
+				<p><?php echo findAZ($meta_data['availability-zone']); ?></p><br>
 			<h3>Information</h3>
 			<p>Server: <?php echo $server_software.'<br>IP: ';?><a href="http://<?php echo $server_ip; ?>"><?php echo $server_ip; ?></a></p>
 			<p>Client: <?php echo $client_agent.'<br>IP: '.$client_ip; ?></p>
