@@ -117,6 +117,7 @@ h4 {
 	float: right;
 	width: 200px;
 	background-color: red;
+	height: 100%;
 }
 
 #sidebar-a .padding {
