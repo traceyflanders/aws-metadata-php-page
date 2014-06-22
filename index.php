@@ -76,7 +76,7 @@ if (empty($_GET['refresh'])) {
 	</div>
 	
 	<div id="header">
-		<h1>Amazon Web Services</h1>
+		<span class="logo">Amazon Web Services</span>
 	</div>
 	
 	<div id="sidebar-a">
