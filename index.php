@@ -59,6 +59,7 @@ if (empty($_GET['refresh'])) {
  		// Starts with http:// or https:// (case insensitive).
  		$region = substr($region, 0,7);
  		$region = strtoupper($region);
+ 		return $region;
  	}
  	
 //  	if (empty($$region) || null($region) || !isset($region)) {
