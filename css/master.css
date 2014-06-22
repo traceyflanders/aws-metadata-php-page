@@ -37,7 +37,7 @@ body {
 #main-nav { padding-left: 11px; overflow: hidden; } 
 */
 
-#main-nav li { float: left; list-style-type: none; width: 40px; text-align: center;'}
+#main-nav li { float: left; list-style-type: none; '}
 
 #main-nav li span {
 	color: #f1f1f1;
@@ -49,6 +49,7 @@ body {
 	padding: 10px;
 	text-decoration: none;
 	margin: 0px;
+	width: 55px; text-align: center;
 }
 
 #main-nav li a:hover {
@@ -58,6 +59,7 @@ body {
 	background-color: #ff6600;
 	text-decoration: none;
 	margin: 0px;
+	width: 55px; text-align: center;
 }
 
 
