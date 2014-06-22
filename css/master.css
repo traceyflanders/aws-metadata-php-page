@@ -104,10 +104,9 @@ body #header {
 		    /*url(../images/logo/about.jpg);*/
 }
 
-.logo {
+#logo {
 	margin: 0;
 	padding: 0;
-	float: left;
 	margin-top: 0px;
 	padding-left: 115px;
 	color: #f1f1f1;
