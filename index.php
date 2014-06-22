@@ -110,6 +110,7 @@ if (empty($_GET['refresh'])) {
 			</ul>
 		</div>
 	</div>
+	</div>
 	
 	<div id="header">
 		<div id="logo">
@@ -117,7 +118,8 @@ if (empty($_GET['refresh'])) {
 	$meta_data['availability-zone']</div>
 	
 	<div id="sidebar-a">
-		<div class="padding"			<h2>AWS R$meta_data['availability-zone']>
+		<div class="padding">
+		<h2>AWS Region</h2>
 				<p><?php echo findRegion($myregion); ?></p>
 			<h3>Availability Zone</h3>
 				<p><?php //echo findAZ($myregion); ?></p>
