@@ -144,11 +144,11 @@ h4 {
 	padding-bottom: 15px;
 }
 
-#content key {
+#content .key {
 	color: red;
 }
 
-#content value {
+#content .value {
 	color: blue;
 }
 
