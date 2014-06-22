@@ -26,7 +26,7 @@ body {
 /* Main Navigation */
 
 #main-nav { height: 50px; 	background-color: gray; }
-#main-nav ul { margin: 0; padding: 0; } 
+#main-nav ul { margin: 0; padding: 5; } 
 
 /* IE5 Mac Hack \*/ 
 #main-nav { padding-left: 11px; } 
@@ -43,7 +43,7 @@ body {
 	overflow: hidden;
 	background-repeat: no-repeat;
 }
-*/
+
 #main-nav li a:hover {
 	background-position: 0 -50px;
 }
@@ -78,7 +78,7 @@ body.contact li#contact a:hover {
 
 body.about #header {
 	height: 150px;
-	background: #db6d16;
+	background: #99ffcc;
 		    /*url(../images/logo/about.jpg);*/
 }
 
@@ -115,7 +115,7 @@ h4 {
 
 #sidebar-a {
 	float: right;
-	width: 280px;
+	width: 200px;
 	background-color: red;
 }
 
@@ -124,7 +124,7 @@ h4 {
 }
 
 #content {
-	margin-right: 280px;
+	margin-right: 200px;
 	background-color: green;
 }
 
