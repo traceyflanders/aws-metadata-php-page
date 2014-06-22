@@ -141,7 +141,7 @@ if (empty($_GET['refresh'])) {
 		<h2>AWS Region</h2>
 				<p><?php echo findRegion($myregion); ?></p><br>
 			<h3>Availability Zone</h3>
-				<p><?php echo findAZ($myregion); ?></p><br>
+				<p><?php //echo findAZ($myregion); ?></p><br>
 			<h3>Information</h3>
 			<p>Server: <?php echo $server_software.'<br>IP: ';?><a href="http://<?php echo $server_ip; ?>"><?php echo $server_ip; ?></a></p>
 			<p>Client: <?php echo $client_agent.'<br>IP: '.$client_ip; ?></p>
