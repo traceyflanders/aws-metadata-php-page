@@ -92,8 +92,8 @@ if (empty($_GET['refresh'])) {
 				<p>us-xxx-x-abc</p>
 			<br>
 			<h3>Information</h3>
-			<p>Server: <?php echo $server_software.'@'.$server_ip; ?></p>	
-			<p>Client: <?php echo $client_agent; ?></p>
+			<p>Server: <?php echo $server_software.'<br>'.$server_ip; ?></p>	
+			<p>Client: <?php echo $client_agent.'<br>'.$client_ip; ?></p>
 		</div>
 	</div> <!-- End sidebar-a -->
 	
