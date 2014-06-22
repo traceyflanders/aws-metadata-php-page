@@ -167,7 +167,7 @@ h4 {
 
 #footer {
 	clear: both;
-	height: 66px;
+	height: 40px;
 	font-family: Tahoma, Arial, Helvetica, Sans-serif;
 	font-size: 11px;
 	color: #f1f1f1;
@@ -176,6 +176,7 @@ h4 {
 	line-height: 18px;
 	background-color: #666666;
 	border-top: 1px solid #666666;
+	border: 1px solid red;
 }
 
 #footer #altnav {
