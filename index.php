@@ -54,7 +54,6 @@ if (empty($_GET['refresh'])) {
  function findRegion ($region) {
  	// check if the value is null/empty
  	echo 'before:'.$region.'<br>';
- 	$region = substr($region, 0, 2) === 'us-';
  	
  	if (preg_match('#^us-west#i', $region) === 1) {
  		// Starts with http:// or https:// (case insensitive).
