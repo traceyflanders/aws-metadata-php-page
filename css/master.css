@@ -93,7 +93,7 @@ body.about #header {
 		    /*url(../images/logo/about.jpg);*/
 }
 
-h1 {
+#header h1 {
 	margin: 0;
 	padding: 0;
 	float: right;
@@ -101,6 +101,10 @@ h1 {
 	padding-right: 31px;
 }
 
+h1 {
+	margin: 0;
+	padding: 0;
+}
 h2 {
 	margin: 0;
 	padding: 0;
