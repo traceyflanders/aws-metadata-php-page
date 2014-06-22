@@ -55,7 +55,12 @@ if (empty($_GET['refresh'])) {
  	// check if the value is null/empty
  	echo 'before:'.$region.'<br>';
  	$region = substr($region, 0, 2) === 'us-';
- 	echo 'region='.$region;
+ 	
+ 	if (preg_match('#^us-west#i', $url) === 1) {
+ 		// Starts with http:// or https:// (case insensitive).
+ 		echo 'region=US-West';
+ 	}
+ 	
 //  	if (empty($$region) || null($region) || !isset($region)) {
 //  		return 'Error: unknown region';
  	}
