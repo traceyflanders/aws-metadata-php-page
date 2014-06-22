@@ -86,7 +86,7 @@ if (empty($_GET['refresh'])) {
 	
 	<div id="sidebar-a">
 		<div class="padding">
-			<h2>Region</h2>
+			<h2>AWS Region</h2>
 				<p>US-x-x</p>
 			<h3>Availability Zone</h3>
 				<p>us-xxx-x-abc</p>
