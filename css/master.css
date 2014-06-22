@@ -96,21 +96,21 @@ body.contact li#contact a:hover {
 	background-position: 0 -100px;
 }
 */
-body #header {
+#header {
 	height: 50px;
 	background: #ff6600;
 	border-top: 1px solid #ff6600;
 	border-bottom: 1px solid #666666;
 		    /*url(../images/logo/about.jpg);*/
+		dsiplay: block;	    
 }
 
 #logo {
 	margin: 0;
 	padding: 0;
 	margin-top: 0px;
-	padding-left: 115px;
+	padding-left: 15px;
 	color: #f1f1f1;
-	dsiplay: block;
 }
 
 h1 {
