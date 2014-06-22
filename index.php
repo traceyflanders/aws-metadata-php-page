@@ -99,7 +99,7 @@ if (empty($_GET['refresh'])) {
 			  <?php
 			    //metadata table
 			    echo '<table border="0" bgcolor="#ffffff" cellpadding="10" cellspacing="0" width="100%">';
-			    echo '<tr><th bgcolor="#c0c0c0" border-bottom="1px" align="left">Metadata</th><th bgcolor="#c0c0c0" border-bottom="1px" align="left">Value</th></tr>';
+			    echo '<tr><th align="left">Metadata</th><th align="left">Value</th></tr>';
 			    foreach($meta_data as $x=>$x_value) {
 			       echo '<tr>';
 			    	echo '<td nowrap><span class="key">'. $x . '</span></td>';
