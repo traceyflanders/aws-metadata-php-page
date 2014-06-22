@@ -27,16 +27,16 @@ body {
 /* Main Navigation */
 
 #main-nav { height: 30px; 	background-color: #666666; }
-/*
+
 #main-nav ul { margin: 0px; padding: 15px; } 
 
-
+/*
 
 #main-nav { padding-left: 11px; overflow: hidden; } 
+*/
 
-
-#main-nav li { float: left; }
-
+#main-nav li { float: left; list-style-type: none;}
+/*
 #main-nav li a {
 	color: #f1f1f1;
 	display: block;
@@ -48,7 +48,7 @@ body {
 
 #main-nav li a:hover {
 	color: #666666;
-	*background-position: 0 -50px;
+	background-position: 0 -50px;
 }
 */
 /*
