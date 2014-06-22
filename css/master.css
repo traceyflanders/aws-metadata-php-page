@@ -37,17 +37,18 @@ body {
 
 #main-nav li { float: left; list-style-type: none;}
 
-#main-nav li a {
+#main-nav li {
 	color: #f1f1f1;
 	display: block;
 	padding: 10px;
 	margin: 0px;
 }
 
+#main-nav li a {
+	text-decoration: none;
+}
+
 #main-nav li a:hover {
-	color: #f1f1f1;
-	display: block;
-	padding: 10px;
 	background-color: purple;
 	text-decoration: none;
 	margin: 0px;
