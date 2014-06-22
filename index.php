@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 
 // Credit
 $author_name = 'AlphaMusk';
-$author_version = 'v1.1';
+$author_version = 'v1.2';
 $author_email = 'alphamusk@networkpulse.com';
 $author_project = 'AWS Metadata PHP Page';
 
@@ -26,7 +26,7 @@ $git_url = 'https://github.com/alphamusk/aws-metadata-php-page';
 $S3_url = "https://s3-us-west-1.amazonaws.com/networkpulse/com/public/images";
 $S3_image = "$S3_url.aws.png";
 $server_name = $_SERVER['SERVER_NAME'];
-$server_ip = $_SERVER['SERVER_ADDR'];
+$server_ip = $meta_data['public-ipv4'];
 $server_software = $_SERVER['SERVER_SOFTWARE'];
 $client_ip = $_SERVER['REMOTE_ADDR'];
 $client_agent = $_SERVER['HTTP_USER_AGENT'];
@@ -143,7 +143,7 @@ if (empty($_GET['refresh'])) {
 			<h3>Availability Zone</h3>
 				<p><?php echo findAZ($meta_data['availability-zone']); ?></p><br>
 			<h3>Information</h3>
-			<p>Server: <?php echo $server_software.'<br>IP: ';?><a href="http://<?php echo $server_ip; ?>"><?php echo $server_ip; ?></a></p>
+			<p>Server: <?php echo $server_software.'<br>Public IP: ';?><a href="http://<?php echo $server_ip; ?>"><?php echo $server_ip; ?></a></p>
 			<p>Client: <?php echo $client_agent.'<br>IP: '.$client_ip; ?></p>
 		</div>
 	</div> <!-- End sidebar-a -->
