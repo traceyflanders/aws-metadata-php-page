@@ -51,14 +51,14 @@ if (empty($_GET['refresh'])) {
  		if (preg_match('#us-west-#i', $az) === 1) {
  			// Starts with us-west (case insensitive)
  			$az = strtolower($az);
- 			$az = '<span class="west"'.$az.'</span>';
+ 			$az = '<span class="west">'.$az.'</span>';
  			return $az;
  		} 		
  	// find out if its east
  		if (preg_match('#us-east-#i', $az) === 1) {
  			// Starts with us-west (case insensitive)
  			$az = strtolower($az);
- 			$az = '<span class="east"'.$az.'</span>';
+ 			$az = '<span class="east">'.$az.'</span>';
  			return $az;
  		}
  		
@@ -76,7 +76,7 @@ if (empty($_GET['refresh'])) {
  			// Starts with us-west (case insensitive)
  			$region = substr($region, 0,9);
  			$region = strtoupper($region);
- 			$region = '<span class="west"'.$region.'</span>';
+ 			$region = '<span class="west">'.$region.'</span>';
  			return $region;
  		} 		
  	// find out if its east
@@ -84,7 +84,7 @@ if (empty($_GET['refresh'])) {
  			// Starts with us-west (case insensitive)
  			$region = substr($region, 0,9);
  			$region = strtoupper($region);
- 			$region = '<span class="east"'.$region.'</span>';
+ 			$region = '<span class="east">'.$region.'</span>';
  			return $region;
  		}
  		
