@@ -50,16 +50,12 @@ if (empty($_GET['refresh'])) {
 	// find out if its west	
  		if (preg_match('#us-west-#i', $az) === 1) {
  			// Starts with us-west (case insensitive).
- 			$az = substr($az, 0,9);
- 			$az = strtoupper($az);
  			$az = '<font color="blue">'.$az.'</font>';
  			return $az;
  		} 		
  	// find out if its east
  		if (preg_match('#us-east-#i', $az) === 1) {
  			// Starts with us-west (case insensitive).
- 			$az = substr($az, 0,9);
- 			$az = strtoupper($az);
  			$az = '<font color="red">'.$az.'</font>';
  			return $az;
  		}
