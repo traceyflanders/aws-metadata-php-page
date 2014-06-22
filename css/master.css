@@ -105,17 +105,12 @@ body.contact li#contact a:hover {
 		    /*url(../images/logo/about.jpg);*/
 }
 
-#logo span {
+#logo h1 {
 	margin: 0;
 	padding: 0;
 	margin-top: 15px;
 	padding-left: 15px;
 	color: #f1f1f1;
-	line-height: 18px;
-	text-align: left;
-	color: #f1f1f1;
-	font-size: 26px;
-	font-style: bold;
 }
 
 h1 {
