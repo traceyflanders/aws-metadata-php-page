@@ -21,12 +21,12 @@ body {
 	margin: auto;
 	text-align: left;
 	/*border: dotted;*/
-	border: 1px solid #c9c9c9:
+	border-style: 1px solid #c9c9c9:
 }
 
 /* Main Navigation */
 
-#main-nav { height: 30px; 	background-color: #666666; }
+#main-nav { height: 30px; 	background-color: #000000; }
 
 #main-nav ul { margin: 0px; padding: 10px; } 
 
@@ -35,7 +35,7 @@ body {
 #main-nav { padding-left: 11px; overflow: hidden; } 
 */
 
-#main-nav li { float: left; list-style-type: none;}
+#main-nav li { /*float:*/ left; list-style-type: none;}
 /*
 #main-nav li a {
 	color: #f1f1f1;
