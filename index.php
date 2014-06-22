@@ -58,13 +58,13 @@ if (empty($_GET['refresh'])) {
  	
  		$region = substr($region, 0,9);
  		$region = strtoupper($region);
-//  		if (preg_match('#us-west-#i', $region) === 1) {
-//  			// Starts with us-west (case insensitive).
- 			
- 			
-//  		}
+ 		
+ 		if (preg_match('#us-west-#i', $region) === 1) {
+ 			// Starts with us-west (case insensitive).
+ 			return '<font color="blue">'.$region.'</font>';
+ 		}
  
- 		return $region;
+ 		
  	}
  	
 
