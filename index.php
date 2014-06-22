@@ -67,11 +67,12 @@ if (empty($_GET['refresh'])) {
 
 	<div id="main-nav">
 		<ul>
-			<li><a href="<?php echo $php_self.'?refresh=2'; ?>">Refresh 2s</a></li>
-			<li><a href="<?php echo $php_self.'?refresh=5'; ?>">Refresh 5s</a></li>
-			<li><a href="<?php echo $php_self.'?refresh=30'; ?>">Refresh 30s</a></li>
-			<li><a href="<?php echo $php_self.'?refresh=60'; ?>">Refresh 60s</a></li>
-			<li><a href="<?php echo $php_self.'?refresh=120'; ?>">Refresh 120s</a></li>
+			<li><p>Page Refresh: </p><li>
+			<li><a href="<?php echo $php_self.'?refresh=2'; ?>">2s</a></li>
+			<li><a href="<?php echo $php_self.'?refresh=5'; ?>">5s</a></li>
+			<li><a href="<?php echo $php_self.'?refresh=30'; ?>">30s</a></li>
+			<li><a href="<?php echo $php_self.'?refresh=60'; ?>">60s</a></li>
+			<li><a href="<?php echo $php_self.'?refresh=120'; ?>">120s</a></li>
 		</ul>
 	</div>
 	
