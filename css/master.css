@@ -152,11 +152,11 @@ h4 {
 	height: 66px;
 	font-family: Tahoma, Arial, Helvetica, Sans-serif;
 	font-size: 11px;
-	color: #c9c9c9;
+	color: #f1f1f1;
 	border-top: 1px solid #efefef;
 	padding: 13px 25px;
 	line-height: 18px;
-	background-color: purple;
+	background-color: #000000;
 }
 
 #footer #altnav {
@@ -171,10 +171,10 @@ h4 {
 }
 
 #footer a {
-	color: #c9c9c9;
+	color: #f1f1f1;
 	text-decoration: none;
 }
 
 #footer a:hover {
-	color: #db6d16;
+	color: #666666;
 }
