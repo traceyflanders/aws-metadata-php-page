@@ -112,6 +112,10 @@ body.contact li#contact a:hover {
 	padding-left: 15px;
 	color: #f1f1f1;
 	line-height: 18px;
+	text-align: left;
+	color: #f1f1f1;
+	font-size: 26px;
+	font-style: bold;
 }
 
 h1 {
