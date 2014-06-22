@@ -109,11 +109,10 @@ if (empty($_GET['refresh'])) {
 	<div id="footer">
 
 		<div id="altnav">
-			<a href="http://github.com/<?php echo $author_name.'/aws-metadata-php-page/README.md' ;?>">Readme</a> | 
-			<a href="http://github.com/<?php echo $author_name.'/aws-metadata-php-page/'; ?>">Source</a> | 
-			<a href="#">Portfolio</a> | 
-			<a href="#">Contact Us</a> | 
-			<a href="#">Terms of Trade</a>
+			<a href="https://github.com/alphamusk/aws-metadata-php-page/blob/master/README.md">Readme</a> | 
+			<a href="http://github.com/<?php echo $author_name; ?>/aws-metadata-php-page">Source</a> | 
+			<a href="mailto:<?php echo $author_email; ?>">Contact</a> | 
+			<a href="https://github.com/alphamusk/aws-metadata-php-page/blob/master/LICENSE">License</a>
 		</div>
 		<div id="copyleft">Copyleft &copy; <?php echo $author_project.' '.$author_version;?><br />
 		Powered by <a href="http://www.php.net/">PHP5</a> and <a href="<?php echo $author_email; ?>"><?php echo $author_name.' Development'; ?></a>
