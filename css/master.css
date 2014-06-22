@@ -28,9 +28,9 @@ body {
 
 /* Main Navigation */
 
-#main-nav { height: 33px; 	background-color: #000000;}
+#main-nav { height: 33px; 	background-color: #000000; float: right:}
 
-#main-nav ul { margin: 0px; padding: 0px; float: right:} 
+#main-nav ul { margin: 0px; padding: 0px;} 
 
 /*
 
