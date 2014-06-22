@@ -42,13 +42,30 @@ if (empty($_GET['refresh'])) {
 }
 
 /** find the availability zone */
- function findAZ ($az) {
+ function findRegion ($az) {
  	// check if the value is null/empty
- 	if (empty($az) || null($az) || !isset($az)) {
- 		return 'Error: unknown az';
- 	}
- 	return $az;
- }
+ 	 	if (empty($az) || !isset($az)) {
+ 		return 'Error: unknown region';
+ 	 	}
+	// find out if its west	
+ 		if (preg_match('#us-west-#i', $az) === 1) {
+ 			// Starts with us-west (case insensitive).
+ 			$az = substr($az, 0,9);
+ 			$az = strtoupper($az);
+ 			$az = '<font color="blue">'.$az.'</font>';
+ 			return $az;
+ 		} 		
+ 	// find out if its east
+ 		if (preg_match('#us-east-#i', $az) === 1) {
+ 			// Starts with us-west (case insensitive).
+ 			$az = substr($az, 0,9);
+ 			$az = strtoupper($az);
+ 			$az = '<font color="red">'.$az.'</font>';
+ 			return $az;
+ 		}
+ 		
+ 		
+ 	} //end function
  
  /** find the region **/
  function findRegion ($region) {
@@ -126,10 +143,9 @@ if (empty($_GET['refresh'])) {
 	<div id="sidebar-a">
 		<div class="padding">
 		<h2>AWS Region</h2>
-				<p><?php echo findRegion($myregion); ?></p>
+				<p><?php echo findRegion($myregion); ?></p><br>
 			<h3>Availability Zone</h3>
-				<p><?php //echo findAZ($myregion); ?></p>
-			<br>
+				<p><?php echo findAZ($myregion); ?></p><br>
 			<h3>Information</h3>
 			<p>Server: <?php echo $server_software.'<br>IP: ';?><a href="http://<?php echo $server_ip; ?>"><?php echo $server_ip; ?></a></p>
 			<p>Client: <?php echo $client_agent.'<br>IP: '.$client_ip; ?></p>
