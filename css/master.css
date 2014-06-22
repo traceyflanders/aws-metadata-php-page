@@ -39,7 +39,7 @@ body {
 
 #main-nav li { float: left; list-style-type: none; width: 40px; text-align: center;'}
 
-#main-nav p {
+#main-nav span {
 	color: #f1f1f1;
 }
 
