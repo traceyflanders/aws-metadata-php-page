@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 
 // Credit
 $author_name = 'AlphaMusk';
-$author_version = 'v1.1';
+$author_version = 'v1.2';
 $author_email = 'alphamusk@networkpulse.com';
 $author_project = 'AWS Metadata PHP Page';
 
@@ -74,7 +74,6 @@ if (empty($_GET['refresh'])) {
 				<li><a href="<?php echo $php_self.'?refresh=30'; ?>">30s</a></li>
 				<li><a href="<?php echo $php_self.'?refresh=60'; ?>">1m</a></li>
 				<li><a href="<?php echo $php_self.'?refresh=3600'; ?>">5m</a></li>
-				<li><a href="<?php echo $php_self.'?refresh=3600'; ?>">test</a></li>
 			</ul>
 		</div>
 	</div>
