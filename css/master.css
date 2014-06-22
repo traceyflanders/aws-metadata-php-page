@@ -136,6 +136,7 @@ h4 {
 	width: 200px;
 	background-color: #c0c0c0;
 	height: 450px;
+	border-left: 1px solid #666666;
 }
 
 #sidebar-a .padding {
@@ -172,6 +173,7 @@ h4 {
 	padding: 13px 25px;
 	line-height: 18px;
 	background-color: #666666;
+	border-top: 1px solid #666666;
 }
 
 #footer #altnav {
