@@ -44,7 +44,7 @@ if (empty($_GET['refresh'])) {
  function findAZ ($az) {
  	// check if the value is null/empty
  	 	if (empty($az) || !isset($az)) {
- 		return 'Error: unknown region';
+ 		return 'Error: unknown az';
  	 	}
 	// find out if its west	
  		if (preg_match('#us-west-#i', $az) === 1) {
@@ -153,7 +153,7 @@ if (empty($_GET['refresh'])) {
 			<h2>EC2 Metadata</h2>
 			  <?php
 			    //metadata table
-			    echo '<table border="0" bgcolor="#ffffff" cellpadding="5" cellspacing="0" width="100%">';
+			    echo '<table border="1px" bgcolor="#ffffff" cellpadding="5" cellspacing="0" width="100%">';
 			    echo '<tr><th align="left">Metadata</th><th align="left">Value</th></tr>';
 			    foreach($meta_data as $x=>$x_value) {
 			       echo '<tr>';
