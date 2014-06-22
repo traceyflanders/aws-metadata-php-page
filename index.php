@@ -42,7 +42,7 @@ if (empty($_GET['refresh'])) {
 }
 
 /** find the availability zone */
- function findRegion ($az) {
+ function findAZ ($az) {
  	// check if the value is null/empty
  	 	if (empty($az) || !isset($az)) {
  		return 'Error: unknown region';
