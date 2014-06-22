@@ -64,7 +64,7 @@ if (empty($_GET['refresh'])) {
 //  	if ($region !== false) {
 //  		return $region;
 //  	}
- }
+//  }
 
 ?>
 
