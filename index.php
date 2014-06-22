@@ -76,7 +76,7 @@ if (empty($_GET['refresh'])) {
 	</div>
 	
 	<div id="header">
-		<h1><img src="<?php echo $S3_image; ?>" width="236" height="36" alt="<?php echo $author_project; ?>" border="0" /></h1>
+		<h1>Amazon Web Services</h1>
 	</div>
 	
 	<div id="sidebar-a">
