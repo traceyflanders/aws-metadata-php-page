@@ -64,16 +64,16 @@ if (empty($_GET['refresh'])) {
 <div id="page-container">
 
 	<div id="main-nav">
-		REFRESH:
 		<ul>
 			<!--  <li id="about"><a href="#">About</a></li>
 			<li id="services"><a href="#">Services</a></li>
 			<li id="portfolio"><a href="#">Portfolio</a></li>
 			<li id="contact"><a href="#">Contact Us</a></li> -->
-			<li><a href="<?php echo $php_self.'?refresh=2'; ?>">2s</a></li>&nbsp|&nbsp
-			<li><a href="<?php echo $php_self.'?refresh=5'; ?>">5s</a></li>&nbsp|&nbsp
-			<li><a href="<?php echo $php_self.'?refresh=30'; ?>">30s</a></li>&nbsp|&nbsp
-			<li><a href="<?php echo $php_self.'?refresh=60'; ?>">602s</a></li>&nbsp|&nbsp
+			<li>Page Refesh</li>
+			<li><a href="<?php echo $php_self.'?refresh=2'; ?>">2s</a></li>
+			<li><a href="<?php echo $php_self.'?refresh=5'; ?>">5s</a></li>
+			<li><a href="<?php echo $php_self.'?refresh=30'; ?>">30s</a></li>
+			<li><a href="<?php echo $php_self.'?refresh=60'; ?>">602s</a></li>
 			<li><a href="<?php echo $php_self.'?refresh=120'; ?>">120s</a></li>
 		</ul>
 	</div>
