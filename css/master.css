@@ -30,7 +30,7 @@ body {
 
 #main-nav { height: 35px; 	background-color: #000000;}
 
-#main-nav ul { margin: 0px; padding: 0px; margin-left: 330px; } 
+#main-nav ul { margin: 0px; padding: 0px; } 
 
 /*
 
@@ -41,8 +41,6 @@ body {
 
 #main-nav p {
 	color: #f1f1f1;
-	display: block;
-	padding: 10px;
 	margin: 0px;
 }
 
