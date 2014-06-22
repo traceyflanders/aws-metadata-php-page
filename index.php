@@ -55,7 +55,7 @@ if (empty($_GET['refresh'])) {
  	
  	echo 'before'.$region.'<br>';
  	// check if the value is null/empty
- 	 	if (empty($$region) || null($region) || !isset($region)) {
+ 	 	if (empty($region) || null($region) || !isset($region)) {
  		return 'Error: unknown region';
  	 	}
  	 
