@@ -20,7 +20,7 @@ body {
 	width: 760px;
 	margin: auto;
 	text-align: left;
-	border: dotted;
+	/*border: dotted;*/
 }
 
 /* Main Navigation */
@@ -77,8 +77,8 @@ body.contact li#contact a:hover {
 }
 
 body.about #header {
-	height: 150px;
-	background: #99ffcc;
+	height: 100px;
+	background: #ff6600;
 		    /*url(../images/logo/about.jpg);*/
 }
 
