@@ -58,7 +58,7 @@ if (empty($_GET['refresh'])) {
  	}
  	
  	$region = strpos("$az", 'us-west');
- 	if ($az != false) {
+ 	if ($region != false) {
  		return $region;
  	}
  }
