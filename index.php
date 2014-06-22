@@ -115,7 +115,7 @@ if (empty($_GET['refresh'])) {
 	<div id="header">
 		<div id="logo">
 			<h1>Amazon Web Services</h1>
-	$meta_data['availability-zone']</div>
+	   </div>
 	
 	<div id="sidebar-a">
 		<div class="padding">
