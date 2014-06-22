@@ -42,6 +42,13 @@ body {
 	margin: 0px;
 }
 
+#main-nav #links {
+	width: 350px;
+	float: right;
+	text-align: right;
+	padding-top: 13px;
+}
+
 #main-nav li a {
 	color: #f1f1f1;
 	display: block;
@@ -101,7 +108,6 @@ body.contact li#contact a:hover {
 	background: #ff6600;
 	border-top: 1px solid #ff6600;
 	border-bottom: 1px solid #666666;
-	border: 1px solid green;
 		    /*url(../images/logo/about.jpg);*/
 }
 
