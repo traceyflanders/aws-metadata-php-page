@@ -40,13 +40,13 @@ if (empty($_GET['refresh'])) {
 	 $page_refresh = $_GET['refresh'];
 }
 
-/*
+
  function findAZ ($az) {
  	// check if the value is null/empty
  	if (empty($az) || isnull($az) || !isset($az)) {
  		return 'unknown az';
  }
- */
+
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
