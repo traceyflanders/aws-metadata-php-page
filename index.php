@@ -22,6 +22,7 @@ $meta_data['public-hostname'] = $public_hostname = exec($curl_cmd." http://".$me
 $meta_data['public-ipv4'] = $public_ipv4 = exec($curl_cmd." http://".$meta_host."/latest/meta-data/public-ipv4/");
 $meta_data['local-hostname'] = $local_hostname = exec($curl_cmd." http://".$meta_host."/latest/meta-data/local-hostname/");
 $meta_data['local-ipv4'] = $local_ipv4 = exec($curl_cmd." http://".$meta_host."/latest/meta-data/local-ipv4/");
+$git_url = 'https://github.com/alphamusk/aws-metadata-php-page';
 $S3_url = "https://s3-us-west-1.amazonaws.com/networkpulse/com/public/images";
 $S3_image = "$S3_url.aws.png";
 $server_name = $_SERVER['SERVER_NAME'];
@@ -109,12 +110,12 @@ if (empty($_GET['refresh'])) {
 	<div id="footer">
 
 		<div id="altnav">
-			<a href="https://github.com/alphamusk/aws-metadata-php-page/blob/master/README.md">Readme</a> | 
-			<a href="http://github.com/<?php echo $author_name; ?>/aws-metadata-php-page">Source</a> | 
+			<a href="<?php echo $git_url; ?>/blob/master/README.md">Readme</a> | 
+			<a href="<?php echo $git_url; ?>">Source</a> | 
 			<a href="mailto:<?php echo $author_email; ?>?subject:<?php echo $author_project;?>">Contact</a> | 
-			<a href="https://github.com/alphamusk/aws-metadata-php-page/blob/master/LICENSE">License</a>
+			<a href="<?php echo $git_url; ?>/blob/master/LICENSE">License</a>
 		</div>
-		<div id="copyleft">Copyleft &copy; <?php echo $author_project.' '.$author_version;?><br />
+		<div id="copyleft">Copyleft &copy; <a href="<?php echo $git_url; ?>"><?php echo $author_project.' '.$author_version;?></a><br />
 		Powered by <a href="http://www.php.net/">PHP5</a> and <a href="<?php echo $author_email; ?>"><?php echo $author_name.' Development'; ?></a>
 		</div>
 	</div> <!-- End Footer -->
