@@ -52,7 +52,6 @@ body {
 	padding: 10px;
 	text-decoration: none;
 	margin: 0px;
-	border: 1px solid #000000;
 }
 
 #main-nav li a:hover {
@@ -62,7 +61,6 @@ body {
 	background-color: #ff6600;
 	text-decoration: none;
 	margin: 0px;
-	border: 1px solid #ff6600;
 }
 
 
@@ -99,7 +97,7 @@ body.contact li#contact a:hover {
 body.about #header {
 	height: 60px;
 	background: #ff6600;
-	border-top: 1px solid #666666;
+	border-top: 1px solid #ff6600;
 	border-bottom: 1px solid #666666;
 		    /*url(../images/logo/about.jpg);*/
 }
