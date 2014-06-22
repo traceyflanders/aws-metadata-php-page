@@ -55,22 +55,20 @@ if (empty($_GET['refresh'])) {
  	// check if the value is null/empty
  	 	if (empty($$region) || null($region) || !isset($region)) {
  		return 'Error: unknown region';
- 	
- 		$region = substr($region, 0,9);
- 		$region = strtoupper($region);
+ 	 	}
+ 	 
  		
  		if (preg_match('#us-west-#i', $region) === 1) {
  			// Starts with us-west (case insensitive).
- 			return '<font color="blue">'.$region.'</font>';
- 		}
- 
+ 			$region = substr($region, 0,9);
+ 			$region = strtoupper($region);
+ 			$region = '<font color="blue">'.$region.'</font>';
+ 		} 		
+ 		return $region;
  		
- 	}
+ 	} //end function
  	
 
- 	
-
- }
 
 ?>
 
