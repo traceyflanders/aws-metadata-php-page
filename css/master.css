@@ -41,6 +41,9 @@ body {
 
 #main-nav li span {
 	color: #f1f1f1;
+	display: block;
+	padding-right: 5px;
+	margin: 0px;
 }
 
 #main-nav li a {
@@ -49,7 +52,8 @@ body {
 	padding: 10px;
 	text-decoration: none;
 	margin: 0px;
-	width: 55px; text-align: center;
+	width: 40px;
+	text-align: center;
 }
 
 #main-nav li a:hover {
@@ -59,7 +63,9 @@ body {
 	background-color: #ff6600;
 	text-decoration: none;
 	margin: 0px;
-	width: 55px; text-align: center;
+	width: 40px;
+	text-align: center;
+	border-bottom: 1px solid #ff6600;
 }
 
 
