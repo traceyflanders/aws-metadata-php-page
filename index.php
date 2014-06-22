@@ -58,7 +58,7 @@ if (empty($_GET['refresh'])) {
  	}
  	
  	$region = substr( $region, 0, 7 ) === "$region";
- 	
+ 	echo 'regiion='.$region;
  	if ($region !== false) {
  		return $region;
  	}
