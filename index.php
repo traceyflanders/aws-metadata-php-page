@@ -134,7 +134,7 @@ if (empty($_GET['refresh'])) {
 		<div id="logo">
 			<h1>Amazon Web Services</h1>
 	   </div>
-	
+	</div>
 	<div id="sidebar-a">
 		<div class="padding">
 		<h2>AWS Region</h2>
@@ -179,6 +179,5 @@ if (empty($_GET['refresh'])) {
 	</div> <!-- End Footer -->
 
 </div> <!-- End Page Container -->
-</div>
 </body>
 </html>
