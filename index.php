@@ -43,7 +43,7 @@ if (empty($_GET['refresh'])) {
 
  function findAZ ($az) {
  	// check if the value is null/empty
- 	if (empty($az) || null($az) || !isset($az)) {
+ 	if (empty($az)) {
  		return 'unknown az';
  }
 
