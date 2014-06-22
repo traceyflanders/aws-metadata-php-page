@@ -129,7 +129,6 @@ if (empty($_GET['refresh'])) {
 			</ul>
 		</div>
 	</div>
-	</div>
 	
 	<div id="header">
 		<div id="logo">
