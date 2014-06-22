@@ -109,8 +109,8 @@ if (empty($_GET['refresh'])) {
 	<div id="footer">
 
 		<div id="altnav">
-			<a href="#">About</a> | 
-			<a href="#">Services</a> | 
+			<a href="http://github.com/<?php echo $author_name.'/aws-metadata-php-page/README.md' ;?>">Readme</a> | 
+			<a href="http://github.com/<?php echo $author_name.'/aws-metadata-php-page/'; ?>">Source</a> | 
 			<a href="#">Portfolio</a> | 
 			<a href="#">Contact Us</a> | 
 			<a href="#">Terms of Trade</a>
