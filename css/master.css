@@ -28,7 +28,7 @@ body {
 
 /* Main Navigation */
 
-#main-nav { height: 35px; 	background-color: #000000; border: 1px solid red;}
+#main-nav { height: 35px; 	background-color: #000000;}
 
 #main-nav ul { margin: 0px; padding: 0px; margin-left: 330px; } 
 
@@ -39,7 +39,7 @@ body {
 
 #main-nav li { float: left; list-style-type: none; width: 55px; text-align: center;'}
 
-#main-nav li p {
+#main-nav p {
 	color: #f1f1f1;
 	display: block;
 	padding: 10px;
