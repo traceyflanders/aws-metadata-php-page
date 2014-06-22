@@ -82,11 +82,10 @@ body.contact li#contact a:hover {
 }
 */
 body.about #header {
-	height: 80px;
+	height: 100px;
 	background: #ff6600;
 		    /*url(../images/logo/about.jpg);*/
 }
-
 
 h1 {
 	margin: 0;
@@ -152,7 +151,7 @@ h4 {
 
 #footer {
 	clear: both;
-	height: 50px;
+	height: 66px;
 	font-family: Tahoma, Arial, Helvetica, Sans-serif;
 	font-size: 11px;
 	color: #f1f1f1;
