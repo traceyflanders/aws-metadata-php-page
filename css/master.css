@@ -27,6 +27,7 @@ body {
 /* Main Navigation */
 
 #main-nav { height: 30px; 	background-color: #666666; }
+/*
 #main-nav ul { margin: 0px; padding: 15px; } 
 
 
@@ -49,6 +50,7 @@ body {
 	color: #666666;
 	*background-position: 0 -50px;
 }
+*/
 /*
 #main-nav li#about,
 #main-nav li#about a { width: 71px; background-image: url(../images/nav/about.gif); }
