@@ -57,7 +57,7 @@ if (empty($_GET['refresh'])) {
  		return 'Error: unknown region';
  	}
  	
- 	$region = strpos($region, 'us-west');
+ 	$region = strpos($region, 'us-west-2a');
  	if ($region != false) {
  		return $region;
  	}
