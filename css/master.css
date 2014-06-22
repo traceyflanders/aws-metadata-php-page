@@ -26,7 +26,7 @@ body {
 /* Main Navigation */
 
 #main-nav { height: 50px; 	background-color: gray; }
-#main-nav ul { margin: 0; padding: 5; } 
+#main-nav ul { margin: 0; padding: 5px; } 
 
 /* IE5 Mac Hack \*/ 
 #main-nav { padding-left: 11px; } 
@@ -125,7 +125,6 @@ h4 {
 
 #content {
 	margin-right: 200px;
-	background-color: green;
 }
 
 #content .padding {
