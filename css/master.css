@@ -88,7 +88,7 @@ body.contact li#contact a:hover {
 }
 */
 body.about #header {
-	height: 100px;
+	height: 60px;
 	background: #ff6600;
 		    /*url(../images/logo/about.jpg);*/
 }
@@ -97,7 +97,7 @@ body.about #header {
 	margin: 0;
 	padding: 0;
 	float: left;
-	margin-top: 50px;
+	margin-top: 20px;
 	padding-left: 15px;
 	color: #f1f1f1;
 }
