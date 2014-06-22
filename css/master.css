@@ -61,14 +61,6 @@ body {
 	margin: 0px;
 }
 
-#main-nav li a:visted {
-	color: #f1f1f1;
-	display: block;
-	padding: 10px;
-	background-color: #ff6600;
-	text-decoration: none;
-	margin: 0px;
-}
 
 /*
 #main-nav li#about,
