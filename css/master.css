@@ -27,20 +27,19 @@ body {
 /* Main Navigation */
 
 #main-nav { height: 30px; 	background-color: #666666; }
-#main-nav ul { margin: 0; padding: 15px; } 
+#main-nav ul { margin: 5px; padding: 15px; } 
 
-/* IE5 Mac Hack \*/ 
-#main-nav { padding-left: 11px; } 
-/*/ 
+
+
 #main-nav { padding-left: 11px; overflow: hidden; } 
-/* End Hack */
+
 
 #main-nav li { float: left; }
 
 #main-nav li a {
 	color: #f1f1f1;
-	/*display: block;
-	height: 0px !important;
+	display: block;
+	/*height: 0px !important;
 	padding: 50px 0 0 0;
 	overflow: hidden;
 	background-repeat: no-repeat;*/
