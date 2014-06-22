@@ -37,7 +37,7 @@ body {
 #main-nav { padding-left: 11px; overflow: hidden; } 
 */
 
-#main-nav li { float: ; list-style-type: none;}
+#main-nav li { float: left; list-style-type: none;}
 
 #main-nav li span {
 	color: #f1f1f1;
