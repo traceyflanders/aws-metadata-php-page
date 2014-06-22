@@ -21,7 +21,9 @@ body {
 	margin: auto;
 	text-align: left;
 	/*border: dotted;*/
-	border: 1px solid #c9c9c9;
+	border-left: 1px solid #666666;
+	border-right: 1px solid #666666;
+	border-bottom: 1px solid #666666;
 }
 
 /* Main Navigation */
