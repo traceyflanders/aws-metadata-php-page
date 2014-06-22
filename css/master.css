@@ -37,11 +37,12 @@ body {
 #main-nav { padding-left: 11px; overflow: hidden; } 
 */
 
-#main-nav li { float: left; list-style-type: none; '}
+#main-nav li { float: left; list-style-type: none; margin-left: 300px;}
 
 #main-nav li span {
 	color: #f1f1f1;
 	display: block;
+	padding: 10px;
 	padding-right: 5px;
 	margin: 0px;
 }
@@ -52,7 +53,7 @@ body {
 	padding: 10px;
 	text-decoration: none;
 	margin: 0px;
-	width: 40px;
+	width: 25px;
 	text-align: center;
 }
 
@@ -63,7 +64,7 @@ body {
 	background-color: #ff6600;
 	text-decoration: none;
 	margin: 0px;
-	width: 40px;
+	width: 25px;
 	text-align: center;
 	border-bottom: 1px solid #ff6600;
 }
