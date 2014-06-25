@@ -62,7 +62,7 @@ body {
 	color: #f1f1f1;
 	display: block;
 	padding: 10px;
-	background-color: #ff6600;
+	background-color: #ff9900;
 	text-decoration: none;
 	margin: 0px;
 	width: 25px;
@@ -71,8 +71,8 @@ body {
 
 #header {
 	height: 50px;
-	background: #ff6600;
-	border-top: 1px solid #ff6600;
+	background: #ff9900;
+	border-top: 1px solid #ff9900;
 	border-bottom: 1px solid #666666;
 		    /*url(../images/logo/about.jpg);*/
 }
@@ -124,7 +124,7 @@ h4 {
 }
 
 #sidebar-a a:hover {
-	color: #ff6600;
+	color: #ff9900;
 }
 
 #sidebar-a .padding {
@@ -201,5 +201,5 @@ h4 {
 }
 
 #footer a:hover {
-	color: #ff6600;
+	color: #ff9900;
 }
