@@ -26,6 +26,7 @@ cd /var/www && git clone http://github.com/alphamusk/aws-metadata-php-page html
 # m h  dom mon dow   command
 job="*/30 * * * *  cd /var/www/html && git pull http://github.com/alphamusk/aws-metadata-php-page.git > /dev/null 2>&1"
 (crontab -u ${USER} -l; echo "${job}" ) | crontab -u ${USER} -
+crontab -l
 
 
 
