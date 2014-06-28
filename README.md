@@ -1,10 +1,10 @@
 Program Overview
--------------------------
+-------------------------------
 Queries metadata address on AWS EC2 instances to help see what machine you hit behind an ELB
 
 
-Installation of EC2
--------------------------
+Installation on EC2 Instance
+-------------------------------
 Paste into bootstrapping
 
 #!/bin/sh
