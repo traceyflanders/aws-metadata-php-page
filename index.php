@@ -118,10 +118,16 @@ if (empty($_GET['refresh'])) {
 
 <div id="page-container">
 
-	<div id="main-nav">
+	
+	<div id="header">
+		<div id="logo">
+			<h1>Amazon Web Services</h1>
+	   </div>
+	</div>
+		<div id="main-nav">
 		<div id="links">
 			<ul>
-				<li><span>Page Refresh</span></li>
+				<li><span>Refresh</span></li>
 				<li><a href="<?php echo $php_self.'?refresh=2'; ?>">2s</a></li>
 				<li><a href="<?php echo $php_self.'?refresh=5'; ?>">5s</a></li>
 				<li><a href="<?php echo $php_self.'?refresh=30'; ?>">30s</a></li>
@@ -129,12 +135,6 @@ if (empty($_GET['refresh'])) {
 				<li><a href="<?php echo $php_self.'?refresh=300'; ?>">5m</a></li>
 			</ul>
 		</div>
-	</div>
-	
-	<div id="header">
-		<div id="logo">
-			<h1>Amazon Web Services</h1>
-	   </div>
 	</div>
 	<div id="sidebar-a">
 		<div class="padding">
