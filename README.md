@@ -1,7 +1,8 @@
 Program Overview
 -------------------------------
 Queries metadata address on AWS EC2 instances to help see what machine you hit behind an ELB
-
+Demo Screenshot
+![Demo screenshot of page](https://raw.githubusercontent.com/alphamusk/aws-metadata-php-page/master/demo.tiff)
 
 Installation on EC2 Instance
 -------------------------------
