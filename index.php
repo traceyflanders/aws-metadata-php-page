@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 
 // Credit
 $author_name = 'AlphaMusk';
-$author_version = 'v1.3';
+$author_version = 'v1.2';
 $author_email = 'alphamusk@networkpulse.com';
 $author_project = 'AWS Metadata PHP Page';
 
@@ -47,8 +47,8 @@ if (empty($_GET['refresh'])) {
  		return 'Error: unknown az';
  	 	}
  		$az = strtolower($az);
- 		$az = '<span class="west">'.$az.'</span>';
  		return $az;
+ 		
  		
  	} //end function
  
@@ -61,8 +61,6 @@ if (empty($_GET['refresh'])) {
  		$region = substr($region, 0,-1);
  		$region = strtoupper($region);
  		return $region;
- 		}
- 		
  		
  	} //end function
  	
@@ -114,7 +112,7 @@ if (empty($_GET['refresh'])) {
 	</div>
 	<div id="sidebar-a">
 		<div class="padding">
-		<h2>AWS Region</h2>
+		<h2>AWS  - Region</h2>
 				<p><?php echo findRegion($meta_data['availability-zone']); ?></p><br>
 			<h3>Availability Zone</h3>
 				<p><?php echo findAZ($meta_data['availability-zone']); ?></p><br>
