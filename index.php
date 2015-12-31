@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 
 // Credit
 $author_name = 'AlphaMusk';
-$author_version = 'v1.2';
+$author_version = 'v1.3';
 $author_email = 'alphamusk@networkpulse.com';
 $author_project = 'AWS Metadata PHP Page';
 
@@ -46,21 +46,9 @@ if (empty($_GET['refresh'])) {
  	 	if (empty($az) || !isset($az)) {
  		return 'Error: unknown az';
  	 	}
-	// find out if its west	
- 		if (preg_match('#us-west-#i', $az) === 1) {
- 			// Starts with us-west (case insensitive)
- 			$az = strtolower($az);
- 			$az = '<span class="west">'.$az.'</span>';
- 			return $az;
- 		} 		
- 	// find out if its east
- 		if (preg_match('#us-east-#i', $az) === 1) {
- 			// Starts with us-west (case insensitive)
- 			$az = strtolower($az);
- 			$az = '<span class="east">'.$az.'</span>';
- 			return $az;
- 		}
- 		
+ 		$az = strtolower($az);
+ 		$az = '<span class="west">'.$az.'</span>';
+ 		return $az;
  		
  	} //end function
  
@@ -70,21 +58,9 @@ if (empty($_GET['refresh'])) {
  	 	if (empty($region) || !isset($region)) {
  		return 'Error: unknown region';
  	 	}
-	// find out if its west	
- 		if (preg_match('#us-west-#i', $region) === 1) {
- 			// Starts with us-west (case insensitive)
- 			$region = substr($region, 0,9);
- 			$region = strtoupper($region);
- 			$region = '<span class="west">'.$region.'</span>';
- 			return $region;
- 		} 		
- 	// find out if its east
- 		if (preg_match('#us-east-#i', $region) === 1) {
- 			// Starts with us-west (case insensitive)
- 			$region = substr($region, 0,9);
- 			$region = strtoupper($region);
- 			$region = '<span class="east">'.$region.'</span>';
- 			return $region;
+ 		$region = substr($region, 0,-1);
+ 		$region = strtoupper($region);
+ 		return $region;
  		}
  		
  		
