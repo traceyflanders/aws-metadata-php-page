@@ -3,7 +3,7 @@ Program Overview
 Queries metadata address on AWS EC2 instances to help see what machine you hit behind an ELB
 
 Demo Screenshot
-![Demo screenshot of page](http://alphamusk.com/aws-metadata-page-demo.jpg)
+![Demo screenshot of page](http://www.alphamusk.com/img/demo_aws_metadata.jpg)
 
 Installation on EC2 Instance
 -------------------------------
