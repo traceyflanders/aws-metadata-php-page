@@ -21,8 +21,8 @@ apt-get install -y apache2 php5 awscli git
 cd /
 rm -rf /var/www/html
 #
-# GIT  code
-cd /var/www && git clone http://github.com/alphamusk/aws-metadata-php-page html
+# GIT code on Ubuntu
+cd /var/www/html && git clone http://github.com/alphamusk/aws-metadata-php-page 
 #
 # Cron job to git source every 30 mins
 # m h  dom mon dow   command
