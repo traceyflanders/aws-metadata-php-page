@@ -33,14 +33,14 @@ $client_agent = $_SERVER['HTTP_USER_AGENT'];
 $page_title =  'AWS Cloud - ' . $server_name;
 $php_self = $_SERVER['SCRIPT_NAME'];
 
-// Check for page refresh, defaults to 5 mins
+/** Check for page refresh, defaults to 5 mins **/
 if (empty($_GET['refresh'])) {
 	 $page_refresh = 300;
 	} else {
 	 $page_refresh = $_GET['refresh'];
 }
 
-/** find the availability zone */
+/** find the availability zone **/
  function findAZ ($az) {
  	// check if the value is null/empty
 	if (empty($az) || !isset($az)) {
@@ -59,11 +59,8 @@ if (empty($_GET['refresh'])) {
  		$region = substr($region, 0,-1);
  		$region = strtoupper($region);
  		return $region;
- 		
- 	} //end function
- 	
-
-
+ } //end function
+ 
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
