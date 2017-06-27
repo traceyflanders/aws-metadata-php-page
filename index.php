@@ -36,13 +36,13 @@ $php_self = $_SERVER['SCRIPT_NAME'];
 /** Check for page refresh, defaults to 5 mins **/
 if (empty($_GET['refresh'])) {
 	 $page_refresh = 300;
-	} else {
+   } else {
 	 $page_refresh = $_GET['refresh'];
 }
 
 /** find the availability zone **/
  function findAZ ($az) {
- 	// check if the value is null/empty
+	// check if the value is null/empty
 	if (empty($az) || !isset($az)) {
 	return 'Error: unknown az';
 	}
@@ -53,12 +53,12 @@ if (empty($_GET['refresh'])) {
  /** find the region **/
  function findRegion ($region) {
  	// check if the value is null/empty
- 	 	if (empty($region) || !isset($region)) {
- 		return 'Error: unknown region';
- 	 	}
- 		$region = substr($region, 0,-1);
- 		$region = strtoupper($region);
- 		return $region;
+	if (empty($region) || !isset($region)) {
+	return 'Error: unknown region';
+	}
+	$region = substr($region, 0,-1);
+	$region = strtoupper($region);
+	return $region;
  } //end function
  
 ?>
