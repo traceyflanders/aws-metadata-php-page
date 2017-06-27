@@ -46,20 +46,8 @@ if (empty($_GET['refresh'])) {
  	 	if (empty($az) || !isset($az)) {
  		return 'Error: unknown az';
  	 	}
-	// find out if its west	
- 		if (preg_match('#us-west-#i', $az) === 1) {
- 			// Starts with us-west (case insensitive)
- 			$az = strtolower($az);
- 			$az = '<span class="west">'.$az.'</span>';
- 			return $az;
- 		} 		
- 	// find out if its east
- 		if (preg_match('#us-east-#i', $az) === 1) {
- 			// Starts with us-west (case insensitive)
- 			$az = strtolower($az);
- 			$az = '<span class="east">'.$az.'</span>';
- 			return $az;
- 		}
+ 		$az = strtolower($az);
+ 		return $az;
  		
  		
  	} //end function
@@ -70,23 +58,9 @@ if (empty($_GET['refresh'])) {
  	 	if (empty($region) || !isset($region)) {
  		return 'Error: unknown region';
  	 	}
-	// find out if its west	
- 		if (preg_match('#us-west-#i', $region) === 1) {
- 			// Starts with us-west (case insensitive)
- 			$region = substr($region, 0,9);
- 			$region = strtoupper($region);
- 			$region = '<span class="west">'.$region.'</span>';
- 			return $region;
- 		} 		
- 	// find out if its east
- 		if (preg_match('#us-east-#i', $region) === 1) {
- 			// Starts with us-west (case insensitive)
- 			$region = substr($region, 0,9);
- 			$region = strtoupper($region);
- 			$region = '<span class="east">'.$region.'</span>';
- 			return $region;
- 		}
- 		
+ 		$region = substr($region, 0,-1);
+ 		$region = strtoupper($region);
+ 		return $region;
  		
  	} //end function
  	
@@ -138,7 +112,7 @@ if (empty($_GET['refresh'])) {
 	</div>
 	<div id="sidebar-a">
 		<div class="padding">
-		<h2>AWS Region</h2>
+		<h2>AWS  - Region</h2>
 				<p><?php echo findRegion($meta_data['availability-zone']); ?></p><br>
 			<h3>Availability Zone</h3>
 				<p><?php echo findAZ($meta_data['availability-zone']); ?></p><br>
