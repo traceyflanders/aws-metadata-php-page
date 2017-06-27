@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 
 // Credit
 $author_name = 'AlphaMusk';
-$author_version = 'v1.2';
+$author_version = 'v1.2.1';
 $author_email = 'alphamusk@networkpulse.com';
 $author_project = 'AWS Metadata PHP Page';
 
@@ -43,14 +43,12 @@ if (empty($_GET['refresh'])) {
 /** find the availability zone */
  function findAZ ($az) {
  	// check if the value is null/empty
- 	 	if (empty($az) || !isset($az)) {
- 		return 'Error: unknown az';
- 	 	}
- 		$az = strtolower($az);
- 		return $az;
- 		
- 		
- 	} //end function
+	if (empty($az) || !isset($az)) {
+	return 'Error: unknown az';
+	}
+	$az = strtolower($az);
+	return $az;		
+ } //end function
  
  /** find the region **/
  function findRegion ($region) {
@@ -68,8 +66,7 @@ if (empty($_GET['refresh'])) {
 
 ?>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
@@ -89,16 +86,13 @@ if (empty($_GET['refresh'])) {
 </head>
 
 <body class="about">
-
 <div id="page-container">
-
-	
 	<div id="header">
 		<div id="logo">
 			<h1>Amazon Web Services</h1>
-	   </div>
+		</div>
 	</div>
-		<div id="main-nav">
+	<div id="main-nav">
 		<div id="links">
 			<ul>
 				<li><span>Refresh</span></li>
@@ -112,10 +106,10 @@ if (empty($_GET['refresh'])) {
 	</div>
 	<div id="sidebar-a">
 		<div class="padding">
-		<h2>AWS  - Region</h2>
-				<p><?php echo findRegion($meta_data['availability-zone']); ?></p><br>
+			<h2>AWS  - Region</h2>
+			<p><?php echo findRegion($meta_data['availability-zone']); ?></p><br>
 			<h3>Availability Zone</h3>
-				<p><?php echo findAZ($meta_data['availability-zone']); ?></p><br>
+			<p><?php echo findAZ($meta_data['availability-zone']); ?></p><br>
 			<h3>Information</h3>
 			<p>Server: <?php echo $server_software.'<br>Public IP: ';?><a href="http://<?php echo $server_ip; ?>"><?php echo $server_ip; ?></a></p>
 			<p>Client: <?php echo $client_agent.'<br>IP: '.$client_ip; ?></p>
@@ -125,7 +119,7 @@ if (empty($_GET['refresh'])) {
 	<div id="content">
 		<div class="padding">
 			<h2>EC2 Metadata</h2>
-			  <?php
+			<?php
 			    //metadata table
 			    echo '<table border="0" bgcolor="#ffffff" cellpadding="5" cellspacing="0" width="100%">';
 			    echo '<tr><th align="left">Metadata</th><th align="left">Value</th></tr>';
@@ -136,12 +130,11 @@ if (empty($_GET['refresh'])) {
 			       echo '</tr>';
 			    }
 			    echo '</table>';
-		    ?>
+		    	?>
 		</div>
 	</div> <!-- End Content -->
 	
 	<div id="footer">
-
 		<div id="altnav">
 			<a href="<?php echo $git_url; ?>/blob/master/README.md">Readme</a> | 
 			<a href="<?php echo $git_url; ?>">Source</a> | 
@@ -149,7 +142,7 @@ if (empty($_GET['refresh'])) {
 			<a href="<?php echo $git_url; ?>/blob/master/LICENSE">License</a>
 		</div>
 		<div id="copyleft">Copyleft &copy; <a href="<?php echo $git_url; ?>"><?php echo $author_project.' '.$author_version;?></a><br />
-		Powered by <a href="http://www.php.net/">PHP5</a> and <a href="mailto:<?php echo $author_email;?>?subject=<?php echo $author_project;?>"><?php echo $author_name.' Development'; ?></a>
+			Powered by <a href="http://www.php.net/">PHP5</a> and <a href="mailto:<?php echo $author_email;?>?subject=<?php echo $author_project;?>"><?php echo $author_name.' Development'; ?></a>
 		</div>
 	</div> <!-- End Footer -->
 
