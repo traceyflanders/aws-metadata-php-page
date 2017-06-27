@@ -1,5 +1,5 @@
 <?php
-// Enable better php debugginh
+// Enable better php debugging
 ini_set('display_errors', 'On');
 //error_reporting(E_ALL | E_STRICT);
 error_reporting(E_ALL);
