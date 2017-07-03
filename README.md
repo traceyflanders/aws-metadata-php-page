@@ -4,18 +4,10 @@ Queries metadata address on AWS EC2 instances to help see what machine you hit b
 ### Demo Screenshot ###
 ![Demo screenshot of page](http://www.alphamusk.com/img/demo_aws_metadata.jpg)
 
-## Installation on EC2 Instance ##
-Paste into bootstrapping
-    #!/bin/sh
-
-### Reconfigure ssh keys (Optional)
-    /bin/rm -v /etc/ssh/ssh_host_*
-    dpkg-reconfigure openssh-server
-
-### Install applications
+### Install required applications
     apt-get install -y apache2 php5 awscli git
 
-### GIT code on Ubuntu
+### GIT code onto Ubuntu instance
     cd /var/www/html && git clone http://github.com/alphamusk/aws-metadata-php-page 
 
 ### Cron job to git source every 30 mins
